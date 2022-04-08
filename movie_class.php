@@ -7,6 +7,7 @@
         public $regista;
         public $descrizione;
         public $lingua_originale;
+        public $data_pubblicazione;
         public $voto;
         public $genere;
         public $oscar = false;
@@ -24,10 +25,11 @@
             }
         }
         // Scrivo un costruttore della classe Movie 
-        function __construct($titolo, $regista, $lingua_originale, $voto, $genere){
+        function __construct($titolo, $regista, $lingua_originale, $data_pubblicazione, $voto, $genere){
             this->titolo = $titolo;
             this->regista = $regista;
             this->lingua_originale = $lingua_originale;
+            this->data_pubblicazione = $data_pubblicazione;
             this->voto = $voto;
             this->gnere = $genere;
         }

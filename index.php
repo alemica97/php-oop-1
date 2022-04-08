@@ -3,6 +3,9 @@
     require_once __DIR__.'/movie_class.php'
     // echo __DIR__ .'/movie_class.php';
 
+    // Istanzio(creo) gli oggetti tramite la classe Movie creata nel file movie_class.php 
+    $film1 = new Movie("Jackie Brown","Quentin Tarantino","en-EN",1997,3.56,"Thriller");
+
 ?>
 
 <!DOCTYPE html>
@@ -15,5 +18,7 @@
 </head>
 <body>
     
+    <p><?php echo $film1->printMovie(); ?></p>
+
 </body>
 </html>
