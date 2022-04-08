@@ -18,17 +18,17 @@
             $this->lingua_originale = $lingua_originale;
             $this->data_pubblicazione = $data_pubblicazione;
             $this->voto = $voto;
-            $this->gnere = $genere;
+            $this->genere = $genere;
         }
         // Scrivo le funzioni (metodi) della classe Movie
-        public function  winOscar($num_oscar){
+        public function winOscar($num_oscar){
             if($num_oscar > 0){
                 $this->oscar = true;
             }
         }
         public function printMovie(){
             if($this->oscar){
-                return $this->titolo .'<br>Regia di: ' .$this->regista .'<br>Vincitore Oscar!>';
+                return $this->titolo .'<br>Regia di: ' .$this->regista .'<br>Vincitore Oscar!';
             }else{
                 return $this->titolo .'<br>Regia di: ' .$this->regista;
             }
