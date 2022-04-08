@@ -23,6 +23,14 @@
                 return this->titolo .'<br>Regia di: ' .this->regista;
             }
         }
+        // Scrivo un costruttore della classe Movie 
+        function __construct($titolo, $regista, $lingua_originale, $voto, $genere){
+            this->titolo = $titolo;
+            this->regista = $regista;
+            this->lingua_originale = $lingua_originale;
+            this->voto = $voto;
+            this->gnere = $genere;
+        }
     }
 
 ?>
